@@ -1,0 +1,641 @@
+*{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+
+body{
+ background-color: white;
+}
+
+h1{
+   color: #B22222;
+   font-size: 30px;
+   font-family: Garamond;
+   font-weight: bold;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   padding-top: 10px;
+   /*position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%);*/
+}
+
+h2{
+   color: #B22222;
+   font-size: 35px;
+   font-family: Garamond;
+   font-weight: bold;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+
+p2{ /*for top left button*/
+ font-size:1.5em;
+ font-family: Monserrat;
+   /*position: absolute;*/
+}
+
+table{
+ color:black;
+ font-size:1.5em;
+ font-family: Monserrat;
+   text-align: left;
+}
+
+table tr th{
+ border-bottom:1px solid black;
+ text-align:left;
+ padding:1px;
+}
+
+table tr td{
+ padding:10px;
+ text-align:left;
+}
+
+/* css for login */
+.login_button{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #3CB371;
+  color:white;
+  padding: 10px 20px;
+  margin-right: 120px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+.login_button:hover{
+  background-color:#FFA500;
+}
+
+/*css for Admin*/
+.btn-addAdmin{
+  background-color: #fdc12a;
+  padding: 13px;
+  margin-right:2%;
+  border-radius: 3px;
+  float:right;
+  width: 12%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+.btn-addAdmin:hover{
+ background-color:#FFFFBD;
+ color:black;
+ border-color:#FFCD38;
+ border-radius: 3px;
+ float:right;
+}
+
+.btn-editAdmin{
+ background-color:#D5DD7A;
+ padding:1%;
+ color:black;
+ border-radius: 3px;
+}
+
+.btn-editAdmin:hover{
+ background-color:#D5DD7A;
+ color:white;
+ border-radius: 3px;
+}
+
+.btn-changePwd{
+ background-color:#FFFFBD;
+ padding:1%;
+ color:black;
+ border-radius: 3px;
+}
+
+.btn-changePwd:hover{
+ background-color:#FFFFBD;
+ color:#FF008E;
+ border-radius: 3px;
+}
+
+.btn-deleteAdmin{
+ background-color:#051D35;
+ padding:1%;
+ color:grey;
+ border-radius: 3px;
+}
+
+.btn-deleteAdmin:hover{
+ background-color:#051D35;
+ color:red;
+ border-radius: 3px;
+}
+
+.container{
+  width: 98%;
+   margin: 0 auto;
+   padding: 1%;
+
+}
+
+.main-content{
+ background-color:white;
+ padding: 10px 100px;
+
+}
+
+.child{
+ display:inline-block;
+}
+
+.popup{
+ float: center;
+ margin-right: 50px;
+}
+
+.add_admin_form{
+  max-width: 450px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+.add_admin_form h3{
+  font-size: 26px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color:black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.add_admin_form .box{
+  text-transform: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: #D3D3D3;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/*css for category.php*/
+.col-4{
+ width:30%;
+ background-color:#e6e6fa;
+ margin:1%;
+ padding: 2%;
+ float:left;
+ border-radius: 10px;
+}
+
+.clearfix{
+ float:none;
+ clear:both;
+}
+
+.add_category_form{
+  max-width: 450px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+.add_category_form h3{
+  font-size: 26px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color:black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.add_category_form .box{
+  text-transform: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: #D3D3D3;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* css for navigation bar*/
+.nav_bar{
+ height: 60px;
+ width: 100%;
+ position: fixed;
+ z-index: 1;
+ background-color: #CD5C5C;
+ border-radius: 0px;
+ padding: 0px 100px;
+ display: flex; /*flex is same with inline*/
+ justify-content: space-between;
+ align-items: center;
+ box-sizing: border-box;
+}
+
+.center{
+  margin-left:400px;
+  font-size:18px;
+}
+
+label.logo{
+   color: white;
+   font-size: 25px;
+   line-height: 80px;
+   padding: 0 90px; /*size*/
+   font-weight: bold;
+   font-family: serif;
+}
+
+ul{
+   list-style-type: none;
+   float: right; /*put it right*/
+   margin-right: 5px; /*leave the right wall 20px*/
+}
+
+ul li{
+   display: inline-block;
+   font-weight: bold;
+   margin:0 5px;
+}
+
+ul li a{
+   color: white;
+   font-size: 17px;
+   padding: 7px 13px;
+   border-radius: 3px; /*make the border circle abit*/
+}
+
+a{ /*affect button font color*/
+   color: white;
+   text-decoration: none;
+}
+
+a:hover{
+   color: black;
+}
+
+/*css for admin login*/
+.login{
+ width:20%;
+ border: 1px solid black;
+ margin:5% auto;/*auto brings the box to center*/
+ text-align:center;
+ padding:3%;
+
+}
+
+/* css for add food */
+*{
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+section{
+  padding: 2rem;
+}
+
+.add_food_form{
+  max-width: 450px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+.add_food_form h3{
+  font-size: 26px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color:black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.add_food_form .box{
+  text-transform: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: #D3D3D3;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* css for buttons in add food and display food */
+.add_button{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #3CB371;
+  color:white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+.cancel_button{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #fcae1e; /*yellow*/
+  color:white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+.button, .update_button, .del_button{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #4682B4;
+  color:white;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+.change_button{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #4682B4;
+  color:white;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+  margin-left: 35px;
+}
+
+.button:hover, .add_button:hover, .cancel_button:hover, .update_button:hover, .del_button:hover{
+  color: black;
+}
+
+.update_button i, .change_button i, .del_button i{
+  padding-right: 12px;
+}
+
+.update_button{
+  margin-left: 35px;
+  background-color: #68bb59; /*green*/
+}
+
+.del_button{
+  margin-left: 35px;
+  margin-top: 0;
+  background-color: #e3242b; /*red*/
+}
+
+/* css for pop up message */
+.message{
+  background-color: blue;
+  position: sticky;
+  top:0; left:0;
+  z-index: 10000;
+  border-radius: .5rem;
+  background-color: white;
+  padding:1.5rem 2rem;
+  margin:0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:1.5rem;
+}
+
+.message span{
+  font-size: 2rem;
+  color:black;
+}
+
+.message i{
+  font-size: 2.5rem;
+  color:balck;
+  cursor: pointer;
+}
+
+.message i:hover{
+  color:red;
+}
+
+/* css for display food */
+.display_food table{
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.display_food table thead th{
+  padding: 10px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.display_food table tfoot th{
+  padding: 10px;
+  font-size: 18px;
+  background-color: #fFA07A;
+  color: black;
+  text-align: center;
+}
+
+.display_food table td{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.display_food table td .hbtn{
+  padding: 10px;
+  padding-left: 120px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+.display_food table td a{
+  width: 70%;
+}
+
+.display_food table td:first-child{
+  padding:0;
+}
+
+.display_food table tr:nth-child(even){
+  background-color: #eee;
+}
+
+.display_food .empty{
+ padding-top: 80px;
+ background-color: #eee;
+  text-align: center;
+  color:black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* css for update food */
+.edit-form-container{
+  position: relative;
+  top:0;
+  left:0;
+  z-index: 1100;
+  background-color: rgba(0,0,0,.7);
+  padding: 10px;
+  min-height: 600px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.edit-form-container form{
+  width: 500px;
+  padding:20px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+
+.edit-form-container form .box{
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin:10px 0;
+  font-size: 17px;
+  color: #333;
+  padding: 12px 14px;
+  text-transform: none;
+}
+
+/* css for categories */
+.categories{
+   padding: 4% 0;
+}
+
+.box{
+   width: 28%;
+   float: left;
+   margin: 2%;
+}
+
+.container_cat{
+   width: 80%;
+   margin: 0 auto;
+   padding: 1%;
+}
+
+.container_cat2{
+   position: relative;
+   margin-top: 10px;
+}
+
+.img{
+   width: 100%;
+   border-radius: 15px;
+}
+
+.text_cat{
+   left: 40%;
+   color: black;
+   text-align: center;
+}
+
+.button{
+   padding: 1%;
+   border: none;
+   font-size: 1rem;
+   border-radius: 5px;
+}
+
+h3{
+   font-size: 1.5rem;
+}
+
+.vieworder_button{
+  background-color: #68bb59; /*green*/
+  display: block;
+  width: 100%;
+  text-align: center;
+  color:white;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+.vieworder_button:hover{
+  color: black;
+}
+
+.vieworder_button i{
+  padding-right: 12px;
+}

@@ -1,0 +1,694 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+	background-color: #F8F8FF;
+}
+
+h1{
+    color: #B22222;
+    font-size: 3em;
+    font-family: Garamond;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+/* css for navigation bar*/
+.nav_bar{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: #000080;
+	border-radius: 0px;
+	padding: 0px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+label.logo{
+    color: white;
+    font-size: 22px;
+    line-height: 80px;
+    padding: 0 90px; /*size*/
+    font-weight: bold;
+	font-family: serif;
+}
+
+ul{
+	list-style-type: none;
+    float: right; /*put it right*/
+	margin-right: 5px; /*leave the right wall 20px*/
+}
+
+ul li{
+    display: inline-block;
+    font-weight: bold;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px; /*make the border circle abit*/
+}
+
+a{ /*affect button font color*/
+    color: white;
+    text-decoration: none;
+}
+
+/* css for order now button */
+.center .ordernow_button{
+    font-family: Georgia;
+    background: orange;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-content: center;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    transform: translate(-50%);
+    border-radius: 40px;
+    border: none;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-out;
+}
+
+/* css for categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+.container_cat{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.container_cat2{
+    position: relative;
+	margin-top: 10px;
+}
+
+.img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.text_cat{
+    left: 40%;
+	color: black;
+	text-align: center;
+}
+
+.button{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+/* css for food menu */
+.menu{
+	padding: 0 10px 10px 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* make it auto fit screen */
+	grid-gap: 5px 10px;
+}
+
+.food_items{
+	display: grid;
+	position: relative;
+	grid-template-rows: auto 1fr;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	margin-top: 130px;
+	width: 80%;
+}
+
+.food_items img{
+	position: relative;
+	width: 100%;
+	border-radius: 15px;
+}
+
+.details{
+	padding: 10px 15px;
+	display: grid;
+	grid-template-rows: auto 1fr 10px;
+	grid-row-gap: 15px; /*gap bet text */
+}
+
+.details2{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.details2 h4{
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.price{
+	text-align: right;
+}
+
+.details .cart_button{
+	background-color: #cb202d;
+	border: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+  height: 200%;
+	cursor: pointer;
+	width: 100%;
+}
+
+/* css for my cart details */
+
+#cart_display{
+	padding-top: 8%;
+}
+
+#cart_display table{
+	border-collapse: collapse;
+	width: 90%;
+	table-layout: fixed;
+	text-align: center;
+}
+
+#cart_display table thead{
+	font-weight: 700;
+}
+
+#cart_display table thead td{
+	background: #fd8c66;
+	color: #fff;
+	border: none;
+	padding: 6px 0; /*padding from top and bottom=6; from left and right=0;*/
+}
+
+#cart_display table td{
+	border: 1px solid #b6b3b3;
+	text-align: center;
+	font-size: 18px;
+  padding: 10px;
+}
+
+#cart_display table tbody input[type="number"]{
+	height: 30px;
+	width: 50%;
+	padding-left: 1px;
+	font-size: 15px;
+}
+
+#cart_display table tbody input[type="submit"]{
+	height: 30px;
+	width: 50%;
+	font-size: 15px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  background-color: #4682B4;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+#cart_display table tbody input[type="submit"]:hover{
+   background-color: black;
+}
+
+#cart_display table tbody p{
+	font-size: 18px;
+}
+
+#cart_display table td:nth-child(1){
+	width: 100px;
+}
+
+#cart_display table td:nth-child(2), #cart_display table td:nth-child(3){
+	width: 200px;
+}
+
+#cart_display table td:nth-child(4), #cart_display table td:nth-child(5), #cart_display table td:nth-child(6){
+	width: 170px;
+}
+
+#cart_display table tbody img{
+	padding-top: 4px;
+	width: 100px;
+	height: 80px;
+	object-fit: cover;
+}
+
+#cart_display table tbody i{
+	color: #8d8c89;
+	cursor: pointer;
+}
+
+.ctn_button, .del_button{
+   display: block;
+   width: 100%;
+   text-align: center;
+   background-color: #4682B4;
+   color:white;
+   padding: 10px 0px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   margin-top: 10px;
+   border: none;
+   box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+   transition: all 0.3s ease-out;
+}
+
+.ctn_button:hover, .del_button:hover{
+   background-color: black;
+}
+
+.ctn_button i, .del_button i{
+   padding-right: .5rem;
+}
+
+.ctn_button{
+   background-color: orange;
+}
+
+.del_button{
+   margin-top: 0;
+   background-color: red;
+}
+
+/* css for checkout */
+#cart_checkout .row{
+	padding-left:50%;
+}
+
+#cart_checkout .total{
+	border: 1px solid #b6b3b3;
+	width: 100%;
+}
+
+#cart_checkout .total h5{
+	text-align: center;
+	background: #fd8c66;
+	color: #fff;
+	border: none;
+	padding: 6px 12px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#cart_checkout .total div{
+	padding: 20px;
+}
+
+#cart_checkout .details3{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#cart_checkout .details3 > h6{
+  padding-left: 20px;
+	font-size: 20px;
+}
+
+#cart_checkout .details3 > p{
+	font-size: 18px;
+	margin-left: 60%;
+}
+
+#cart_checkout .total button{
+	justify-content: center;
+	background-color: black;
+	border: none;
+	color: white;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 0px;
+	width: 30%;
+	cursor: pointer;
+	padding: 10px;
+	margin: right;
+	margin-left: 60%;
+	margin-bottom: 5%;
+}
+
+/* css for confirmation order */
+.container3{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 410px;
+    padding: 30px;
+    background: white;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.container3 form .title_login1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.container3 form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+form .data label{
+    font-size: 18px;
+    display: flex;
+}
+
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid lightgray;
+}
+
+form .data input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+}
+
+/* css for display total and food in order confirmation */
+.display_order{
+   width: 100%;
+   background-color: white;
+   border: 1px solid #999;
+   border-radius: 5px;
+   text-align: center;
+   padding: 5px;
+   box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.display_order span{
+   display: inline-block;
+   border-radius: 8px;
+   background-color: #eee;
+   font-size: 18px;
+   color: black;
+   margin: 5px;
+   padding: 8px 12px;
+}
+
+.display_order span.total{
+   width: 70%;
+   background-color: #B22222;
+   color: white;
+   padding: 8px;
+   margin-top: 5px;
+   font-weight: bold;
+}
+
+/* css for place order message pop up */
+.order_container{
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top:0;
+   left:0;
+   height: 100vh;
+   padding: 10px;
+   z-index: 1100;
+   background-color: rgba(0,0,0,.7);
+   width: 100%;
+}
+
+.order_container .msg_container{
+   width: 50%;
+   background-color: white;
+   border-radius: 5px;
+   text-align: center;
+}
+
+.order_container .msg_container h3{
+   font-size: 25px;
+   font-weight: bold;
+   color: black;
+   padding: 10px;
+}
+
+.order_container .msg_container .order_detail{
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #eee;
+  font-size: 18px;
+  color: black;
+  margin: 5px;
+  padding: 8px 12px;
+}
+
+.order_container .msg_container .order_detail span{
+   background-color: white;
+   border-radius: .5rem;
+   color: black;
+   font-size: 18px;
+   display: inline-block;
+   padding:1rem 1.5rem;
+   margin:1rem;
+}
+
+.order_container .msg_container .order_detail span.price_total{
+  width: 70%;
+  background-color: #B22222;
+  color: white;
+  padding: 8px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.order_container .msg_container .cus_detail{
+   margin:15px 0;
+}
+
+.order_container .msg_container .cus_detail p{
+   padding: 10px 0;
+   font-size: 18px;
+   color: black;
+}
+
+.order_container .msg_container .cus_detail p span{
+   color: #2980b9;
+   padding: 5px;
+   text-transform: none;
+}
+
+/* css for sidebar */
+.right_sidebar1{
+	background: #E0DDE6;
+	margin-top: 60px;
+	position: fixed;
+	right: 0;
+	width: 450px;
+	height: 10%;
+}
+
+.right_sidebar1 h1{
+	color: black;
+	top: 2%;
+	margin-top: 13px;
+	margin-bottom: 20px;
+    font-size: 2em;
+
+}
+
+.right_sidebar2{
+	background: #E6E6FA;
+	margin-top: 120px;
+	padding-top: 5px;
+	position: fixed;
+	right: 0;
+	width: 450px;
+	height: 100%;
+}
+
+.right_sidebar2 .food_image{
+	width: 250px;
+	height: 200px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 20px;
+}
+
+.right_sidebar2 a{
+	font-size: 18px;
+	color: black;
+	display: block;
+	width: 100%;
+	line-height: 40px;
+	text-decoration: none;
+	padding-left: 80px;
+	box-sizing: border-box;
+}
+
+.right_sidebar2 b{
+	font-size: 18px;
+	color: black;
+	display: block;
+	width: 100%;
+	line-height: 100px;
+	text-decoration: none;
+	padding-left: 135px;
+	box-sizing: border-box;
+	margin-top: 100px;
+}
+
+.right_sidebar2 input{
+	height: 30px;
+	width: 30%;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+.right_sidebar2 > button{
+	background-color: #cb202d;
+	border: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	margin-left: 70px;
+	width: 70%;
+	cursor: pointer;
+	height: 5%;
+}
+
+/* css for about us */
+.about_us {
+  position: absolute;
+  width: 80%;
+  height: 85%;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  transition: 0.5s;
+}
+
+.about_us:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+ .about_us h1{
+  color: black;
+ 	top: 5%;
+  font-size: 3em;
+ }
+
+ .about_us .image {
+  width: 200px;
+  margin-top: 50px;
+ 	margin-bottom: 110px;
+  margin-left: 50px;
+  flex: 0 0 450px;
+ }
+
+.about_us .image img {
+  max-width: 80%;
+}
+
+.about_us .content {
+  padding-top: 80px;
+  padding-left: 10px;
+}
+
+.about_us .content h2 {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 0;
+  color: black;
+  font-size: 25px;
+}
+
+.about_us .content p {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 0 0;
+  padding-right: 50px;
+  text-align: justify;
+}
+
+.back_button{
+  margin-top: 80px;
+  background-color: #fdc12a;
+  padding: 13px;
+  margin-left: 67%;
+  width: 12%;
+  position:absolute;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-out;
+}
+
+.back_button:hover{
+ background-color:#FFFFBD;
+ color:black;
+ border-color:#FFCD38;
+ border-radius: 3px;
+ float:right;
+}
